@@ -7,7 +7,7 @@
     <title>Kay Karu? | तुमच्या समस्येचा सोपा मार्ग</title>
 
     <meta name="description"
-          content="तुमची समस्या सांगा आणि पुढचा मार्ग सोप्या भाषेत जाणून घ्या.">
+          content="तुमची समस्या सांगा आणि पुढचा मार्ग सोप्या भाषेत जाणून घ्या. Government services, documents, digital problems आणि online services साठी सोपे मार्गदर्शन.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
 <header class="header">
     <div class="container nav">
 
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             💡 Kay Karu?
         </a>
 
@@ -49,7 +49,6 @@
             हे सोप्या भाषेत जाणून घ्या.
         </p>
 
-
         <div class="search-box">
 
             <input
@@ -65,6 +64,7 @@
         </div>
 
         <div class="examples">
+
             <span>उदा.</span>
 
             <button onclick="setProblem('माझं PAN Card हरवलं आहे')">
@@ -78,6 +78,7 @@
             <button onclick="setProblem('मला Income Certificate काढायचं आहे')">
                 Income Certificate
             </button>
+
         </div>
 
     </div>
@@ -123,6 +124,9 @@
 
         <div class="problem-grid">
 
+
+            <!-- PAN -->
+
             <div class="problem-card"
                  onclick="setProblem('माझं PAN Card हरवलं आहे')">
 
@@ -139,21 +143,25 @@
             </div>
 
 
+            <!-- AADHAAR -->
+
             <div class="problem-card"
-                 onclick="setProblem('माझं Aadhaar mobile number बदलायचं आहे')">
+                 onclick="window.location.href='aadhaar-update.html'">
 
                 <div class="card-icon">🆔</div>
 
                 <h3>Aadhaar</h3>
 
                 <p>
-                    Aadhaar संबंधित सामान्य समस्या
+                    Aadhaar Update, Mobile, Address आणि इतर माहिती
                 </p>
 
-                <span>उपाय पहा →</span>
+                <span>सविस्तर माहिती →</span>
 
             </div>
 
+
+            <!-- UPI -->
 
             <div class="problem-card"
                  onclick="setProblem('माझं UPI payment अडकलं आहे')">
@@ -171,6 +179,8 @@
             </div>
 
 
+            <!-- INCOME -->
+
             <div class="problem-card"
                  onclick="setProblem('मला Income Certificate काढायचं आहे')">
 
@@ -187,6 +197,8 @@
             </div>
 
 
+            <!-- CASTE -->
+
             <div class="problem-card"
                  onclick="setProblem('मला Caste Certificate काढायचं आहे')">
 
@@ -202,6 +214,8 @@
 
             </div>
 
+
+            <!-- DRIVING LICENCE -->
 
             <div class="problem-card"
                  onclick="setProblem('माझं Driving Licence renew करायचं आहे')">
@@ -240,40 +254,100 @@
 
         <div class="category-grid">
 
-            <div class="category-card">
+
+            <!-- GOVERNMENT SERVICES -->
+
+            <div class="category-card"
+                 onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})">
+
                 🏛️
+
                 <h3>Government Services</h3>
-                <p>सरकारी कामे आणि services</p>
+
+                <p>
+                    सरकारी कामे आणि services
+                </p>
+
             </div>
 
-            <div class="category-card">
+
+            <!-- DOCUMENTS -->
+
+            <div class="category-card"
+                 onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})">
+
                 📄
+
                 <h3>Documents</h3>
-                <p>Certificates आणि documents</p>
+
+                <p>
+                    Certificates आणि documents
+                </p>
+
             </div>
 
-            <div class="category-card">
+
+            <!-- DIGITAL -->
+
+            <div class="category-card"
+                 onclick="setProblem('माझं UPI payment अडकलं आहे')">
+
                 📱
+
                 <h3>Digital Problems</h3>
-                <p>Apps, UPI आणि online समस्या</p>
+
+                <p>
+                    Apps, UPI आणि online समस्या
+                </p>
+
             </div>
 
-            <div class="category-card">
+
+            <!-- JOBS -->
+
+            <div class="category-card"
+                 onclick="setProblem('मला job related help पाहिजे')">
+
                 💼
+
                 <h3>Jobs & Work</h3>
-                <p>Job related help</p>
+
+                <p>
+                    Job related help
+                </p>
+
             </div>
 
-            <div class="category-card">
+
+            <!-- VEHICLE -->
+
+            <div class="category-card"
+                 onclick="setProblem('माझं Driving Licence renew करायचं आहे')">
+
                 🚗
+
                 <h3>Vehicle</h3>
-                <p>Licence आणि vehicle services</p>
+
+                <p>
+                    Licence आणि vehicle services
+                </p>
+
             </div>
 
-            <div class="category-card">
+
+            <!-- ONLINE ERRORS -->
+
+            <div class="category-card"
+                 onclick="setProblem('माझा online form error दाखवत आहे')">
+
                 🛠️
+
                 <h3>Online Errors</h3>
-                <p>Website आणि form errors</p>
+
+                <p>
+                    Website आणि form errors
+                </p>
+
             </div>
 
         </div>
