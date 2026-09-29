@@ -2,14 +2,15 @@
 <html lang="mr">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Aadhaar Update कसा करायचा? | Address, Mobile, Name, DOB | Kay Karu?</title>
+  <title>Aadhaar Update कसा करायचा? | Mobile, Address, Name, DOB | Kay Karu?</title>
 
-  <meta name="description" content="Aadhaar Update कसा करायचा? Address, Name, Date of Birth, Mobile Number, Email, Photo आणि Biometric update ची माहिती, documents, online process, Aadhaar centre process, fees आणि status check.">
+  <meta name="description" content="Aadhaar Update कसा करायचा? Mobile Number, Address, Name, Date of Birth, Gender, Photo आणि Biometric Update ची सविस्तर माहिती. Online process, Aadhaar Centre, Aadhaar App, documents, fees, status आणि common mistakes.">
 
-  <meta name="keywords" content="Aadhaar update, Aadhaar update Marathi, Aadhaar address update, Aadhaar mobile number update, Aadhaar name correction, Aadhaar DOB update, Aadhaar update online, Aadhaar centre">
+  <meta name="keywords" content="Aadhaar update Marathi, Aadhaar update online, Aadhaar mobile number update, Aadhaar address update, Aadhaar name correction, Aadhaar DOB update, Aadhaar biometric update, Aadhaar App, Aadhaar centre">
+
+  <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://kay-karu.netlify.app/aadhaar-update.html">
 
@@ -18,23 +19,29 @@
   <style>
     .page-container {
       max-width: 1000px;
-      margin: 40px auto;
+      margin: 35px auto;
       padding: 0 20px 60px;
     }
 
+    .breadcrumb {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #64748b;
+    }
+
     .page-hero {
-      background: linear-gradient(135deg, #eef6ff, #ffffff);
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
       border: 1px solid #dbeafe;
       border-radius: 22px;
-      padding: 35px 25px;
+      padding: 38px 28px;
       margin-bottom: 25px;
     }
 
     .page-hero .badge {
       display: inline-block;
-      background: #e0f2fe;
-      color: #0369a1;
-      padding: 7px 13px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 7px 14px;
       border-radius: 30px;
       font-size: 14px;
       font-weight: 700;
@@ -42,9 +49,10 @@
     }
 
     .page-hero h1 {
-      font-size: 36px;
+      font-size: 38px;
       line-height: 1.25;
       margin: 0 0 15px;
+      color: #0f172a;
     }
 
     .page-hero p {
@@ -55,10 +63,10 @@
     }
 
     .info-card {
-      background: #fff;
+      background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 18px;
-      padding: 25px;
+      padding: 26px;
       margin-bottom: 22px;
       box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
     }
@@ -78,7 +86,7 @@
     }
 
     .info-card p {
-      line-height: 1.8;
+      line-height: 1.85;
       color: #475569;
     }
 
@@ -99,7 +107,8 @@
       padding: 16px 18px;
       border-radius: 10px;
       margin: 18px 0;
-      line-height: 1.7;
+      line-height: 1.75;
+      color: #7c2d12;
     }
 
     .success-box {
@@ -108,7 +117,8 @@
       padding: 16px 18px;
       border-radius: 10px;
       margin: 18px 0;
-      line-height: 1.7;
+      line-height: 1.75;
+      color: #14532d;
     }
 
     .danger-box {
@@ -117,13 +127,25 @@
       padding: 16px 18px;
       border-radius: 10px;
       margin: 18px 0;
-      line-height: 1.7;
+      line-height: 1.75;
+      color: #7f1d1d;
+    }
+
+    .info-box {
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      padding: 16px 18px;
+      border-radius: 10px;
+      margin: 18px 0;
+      line-height: 1.75;
+      color: #1e3a8a;
     }
 
     .fee-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 15px;
+      margin-top: 18px;
+      overflow: hidden;
     }
 
     .fee-table th,
@@ -131,30 +153,40 @@
       border: 1px solid #e5e7eb;
       padding: 13px;
       text-align: left;
+      vertical-align: top;
     }
 
     .fee-table th {
       background: #f8fafc;
+      color: #0f172a;
     }
 
     .official-button {
       display: inline-block;
       background: #2563eb;
-      color: white;
+      color: #ffffff;
       text-decoration: none;
       padding: 13px 20px;
       border-radius: 10px;
       font-weight: 700;
-      margin-top: 8px;
+      margin: 5px 5px 5px 0;
     }
 
     .official-button:hover {
       background: #1d4ed8;
     }
 
+    .secondary-button {
+      background: #0f172a;
+    }
+
+    .secondary-button:hover {
+      background: #1e293b;
+    }
+
     .faq-item {
       border-bottom: 1px solid #e5e7eb;
-      padding: 15px 0;
+      padding: 16px 0;
     }
 
     .faq-item:last-child {
@@ -167,13 +199,34 @@
       margin-bottom: 7px;
     }
 
-    .breadcrumb {
-      margin-bottom: 20px;
-      font-size: 14px;
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 18px;
+    }
+
+    .quick-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .quick-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+
+    .quick-card span {
       color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
     @media (max-width: 700px) {
+
       .page-container {
         margin-top: 25px;
         padding-left: 15px;
@@ -181,11 +234,15 @@
       }
 
       .page-hero {
-        padding: 25px 18px;
+        padding: 26px 18px;
       }
 
       .page-hero h1 {
-        font-size: 28px;
+        font-size: 29px;
+      }
+
+      .page-hero p {
+        font-size: 16px;
       }
 
       .info-card {
@@ -196,8 +253,17 @@
         font-size: 22px;
       }
 
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+
       .fee-table {
         font-size: 14px;
+      }
+
+      .fee-table th,
+      .fee-table td {
+        padding: 10px;
       }
     }
   </style>
@@ -208,7 +274,10 @@
   <!-- HEADER -->
   <header>
     <div class="container nav-container">
-      <a href="index.html" class="logo">💡 Kay Karu?</a>
+
+      <a href="index.html" class="logo">
+        💡 Kay Karu?
+      </a>
 
       <nav>
         <a href="index.html">Home</a>
@@ -216,11 +285,12 @@
         <a href="index.html#categories">Categories</a>
         <a href="index.html#about">About</a>
       </nav>
+
     </div>
   </header>
 
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main class="page-container">
 
     <div class="breadcrumb">
@@ -231,31 +301,79 @@
     <!-- HERO -->
     <section class="page-hero">
 
-      <span class="badge">🪪 Aadhaar Guide</span>
+      <span class="badge">
+        🪪 Aadhaar Guide
+      </span>
 
       <h1>
         Aadhaar Update कसा करायचा?
       </h1>
 
       <p>
-        Aadhaar मध्ये Address, Name, Date of Birth, Gender, Mobile Number,
-        Email, Photo आणि Biometric details याबद्दल update करायचे असल्यास
-        कोणता मार्ग वापरायचा, कोणती कागदपत्रे लागतात आणि प्रक्रिया कशी
-        पूर्ण करायची याची सोपी माहिती येथे दिली आहे.
+        Aadhaar Card मध्ये Address, Mobile Number, Name, Date of Birth,
+        Gender, Email, Photo किंवा Biometric information update करायची
+        असल्यास कोणता मार्ग वापरायचा, कोणती कागदपत्रे लागतात, किती शुल्क
+        लागू शकते आणि request चा status कसा check करायचा याची सविस्तर
+        आणि सोपी माहिती येथे दिली आहे.
       </p>
 
     </section>
 
 
-    <!-- BASIC INFORMATION -->
+    <!-- QUICK OVERVIEW -->
+    <section class="info-card">
+
+      <h2>⚡ थोडक्यात माहिती</h2>
+
+      <div class="quick-grid">
+
+        <div class="quick-card">
+          <strong>🏠 Address</strong>
+          <span>
+            Online MyAadhaar वर उपलब्ध service वापरता येते.
+          </span>
+        </div>
+
+        <div class="quick-card">
+          <strong>📱 Mobile Number</strong>
+          <span>
+            UIDAI च्या सध्याच्या माहितीनुसार Aadhaar App मध्येही
+            mobile update service उपलब्ध आहे.
+          </span>
+        </div>
+
+        <div class="quick-card">
+          <strong>👤 Name / DOB / Gender</strong>
+          <span>
+            उपलब्ध service आणि verification नुसार Aadhaar Centre/App
+            मधील उपलब्ध पर्याय तपासा.
+          </span>
+        </div>
+
+        <div class="quick-card">
+          <strong>👁️ Biometric</strong>
+          <span>
+            Photo, fingerprints आणि iris यांचा update लागू असल्यास
+            Aadhaar Seva Kendra/Update Centre वर केला जातो.
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHAT CAN BE UPDATED -->
     <section class="info-card">
 
       <h2>📌 Aadhaar मध्ये कोणती माहिती Update करता येते?</h2>
 
       <p>
-        UIDAI नुसार Aadhaar मध्ये demographic आणि biometric माहिती update
-        करण्याची सुविधा उपलब्ध आहे.
+        UIDAI च्या सध्याच्या माहितीनुसार Aadhaar मधील demographic आणि
+        biometric information update करता येते.
       </p>
+
+      <h3>Demographic Information</h3>
 
       <ul>
         <li>Name</li>
@@ -264,89 +382,45 @@
         <li>Gender</li>
         <li>Mobile Number</li>
         <li>Email Address</li>
-        <li>Photo</li>
+        <li>Relationship Status</li>
+        <li>Information Sharing Consent</li>
+      </ul>
+
+      <h3>Biometric Information</h3>
+
+      <ul>
+        <li>Facial Photograph</li>
         <li>Fingerprints</li>
         <li>Iris</li>
       </ul>
 
-      <div class="notice">
+    </section>
+
+
+    <!-- ONLINE OPTIONS -->
+    <section class="info-card">
+
+      <h2>🌐 Aadhaar Update Online कसा करायचा?</h2>
+
+      <p>
+        UIDAI कडून online Aadhaar services सतत update होत आहेत. सध्या
+        MyAadhaar portal वर Address Update आणि Document Update सारख्या
+        services उपलब्ध आहेत. UIDAI ने नवीन Aadhaar App मध्येही
+        Mobile Number Update, Address Update आणि Track My Request सारख्या
+        सुविधा उपलब्ध असल्याचे सांगितले आहे.
+      </p>
+
+      <div class="info-box">
         <strong>महत्त्वाचे:</strong>
-        प्रत्येक update online करता येत नाही. विशेषतः mobile number आणि
-        अनेक demographic/biometric changes साठी Aadhaar Enrolment/Update
-        Centre ला भेट द्यावी लागू शकते.
+        Online service वापरण्यासाठी काही services साठी Aadhaar ला
+        registered mobile number आवश्यक असतो.
       </div>
 
-    </section>
-
-
-    <!-- ONLINE VS OFFLINE -->
-    <section class="info-card">
-
-      <h2>🌐 Online की Aadhaar Centre?</h2>
-
-      <h3>Online कोणते काम करता येते?</h3>
-
-      <p>
-        UIDAI च्या सध्याच्या माहितीनुसार myAadhaar portal वर
-        <strong>Address Update</strong> आणि उपलब्ध असलेल्या
-        <strong>Document Update</strong> services वापरता येतात.
-        Online services वापरण्यासाठी Aadhaar ला registered mobile number
-        असणे आवश्यक आहे.
-      </p>
-
-      <h3>🏢 Aadhaar Centre वर कोणते काम करता येते?</h3>
-
-      <ul>
-        <li>Name update/correction</li>
-        <li>Date of Birth update</li>
-        <li>Gender update</li>
-        <li>Mobile number update</li>
-        <li>Email update</li>
-        <li>Photo update</li>
-        <li>Fingerprint update</li>
-        <li>Iris update</li>
-        <li>इतर उपलब्ध demographic/biometric services</li>
-      </ul>
-
-    </section>
-
-
-    <!-- DOCUMENTS -->
-    <section class="info-card">
-
-      <h2>📄 Aadhaar Update साठी कोणती Documents लागतात?</h2>
-
-      <p>
-        आवश्यक document हे तुम्ही कोणती माहिती update करत आहात यावर
-        अवलंबून असते. UIDAI कडे accepted supporting documents ची स्वतंत्र
-        यादी उपलब्ध आहे.
-      </p>
-
-      <ul>
-        <li>Identity Proof (POI), लागू असल्यास</li>
-        <li>Address Proof (POA), लागू असल्यास</li>
-        <li>Update करण्याच्या माहितीशी संबंधित supporting document</li>
-        <li>Original documents centre वर verification साठी घेऊन जाणे</li>
-      </ul>
-
-      <div class="notice">
-        <strong>Tip:</strong>
-        Document वर असलेले नाव, spelling, जन्मतारीख किंवा address आणि
-        Aadhaar मध्ये update करायची माहिती यामध्ये mismatch असल्यास
-        request मध्ये अडचण येऊ शकते.
-      </div>
-
-    </section>
-
-
-    <!-- ONLINE ADDRESS UPDATE -->
-    <section class="info-card">
-
-      <h2>🌐 Aadhaar Address Online Update कसा करायचा?</h2>
+      <h3>MyAadhaar वर प्रक्रिया</h3>
 
       <ol>
         <li>
-          UIDAI च्या official <strong>myAadhaar</strong> portal वर जा.
+          UIDAI च्या official MyAadhaar portal वर जा.
         </li>
 
         <li>
@@ -354,39 +428,189 @@
         </li>
 
         <li>
-          Registered mobile number वर आलेला OTP enter करा.
+          Registered mobile number वर आलेला OTP वापरून authentication
+          पूर्ण करा.
         </li>
 
         <li>
-          उपलब्ध services मधून Address Update निवडा.
+          उपलब्ध असलेली संबंधित update service निवडा.
         </li>
 
         <li>
-          नवीन address काळजीपूर्वक enter करा.
+          नवीन माहिती काळजीपूर्वक enter करा.
         </li>
 
         <li>
-          मागितलेला supporting address proof upload करा.
+          आवश्यक असल्यास supporting document upload करा.
         </li>
 
         <li>
-          English spelling आणि address details पुन्हा तपासा.
+          Preview मध्ये प्रत्येक detail तपासा.
         </li>
 
         <li>
-          आवश्यक authentication/payment step पूर्ण करा.
+          Request submit करा.
         </li>
 
         <li>
-          Request submit केल्यानंतर मिळालेला acknowledgement / request
-          reference सुरक्षित ठेवा.
+          मिळालेला request/reference number सुरक्षित ठेवा.
         </li>
       </ol>
 
+    </section>
+
+
+    <!-- ADDRESS UPDATE -->
+    <section class="info-card">
+
+      <h2>🏠 Aadhaar Address Online Update कसा करायचा?</h2>
+
+      <p>
+        UIDAI च्या MyAadhaar service मधून address update request करता
+        येते. Registered mobile number आवश्यक आहे.
+      </p>
+
+      <ol>
+        <li>MyAadhaar portal उघडा.</li>
+        <li>Aadhaar number आणि OTP वापरून login करा.</li>
+        <li>Address Update service निवडा.</li>
+        <li>नवीन address enter करा.</li>
+        <li>Supporting address proof उपलब्ध पर्यायानुसार upload करा.</li>
+        <li>English address carefully तपासा.</li>
+        <li>Regional language transliteration देखील तपासा.</li>
+        <li>Request submit करा.</li>
+        <li>Request/reference number जतन करा.</li>
+      </ol>
+
+      <div class="notice">
+        <strong>Tip:</strong>
+        Address enter करताना House/Flat Number, Street, Village/City,
+        District, State आणि PIN Code यामध्ये spelling किंवा typing mistake
+        होणार नाही याची काळजी घ्या.
+      </div>
+
+    </section>
+
+
+    <!-- MOBILE UPDATE -->
+    <section class="info-card">
+
+      <h2>📱 Aadhaar Mobile Number Update कसा करायचा?</h2>
+
+      <p>
+        UIDAI च्या सध्याच्या माहितीनुसार नवीन Aadhaar App मध्ये
+        Mobile Number Update ची सुविधा उपलब्ध आहे. तसेच Aadhaar
+        Enrolment/Update Centre वरही mobile number update करण्याची
+        सुविधा उपलब्ध आहे.
+      </p>
+
+      <h3>Centre वर update करायचा असल्यास</h3>
+
+      <ol>
+        <li>जवळचे Aadhaar Enrolment/Update Centre शोधा.</li>
+        <li>Aadhaar number घेऊन जा.</li>
+        <li>नवीन mobile number द्या.</li>
+        <li>आवश्यक authentication पूर्ण करा.</li>
+        <li>Operator ने भरलेली माहिती तपासा.</li>
+        <li>Request submit करा.</li>
+        <li>Acknowledgement receipt घ्या.</li>
+      </ol>
+
+      <div class="danger-box">
+        <strong>OTP कधीही share करू नका.</strong>
+        Aadhaar OTP, banking OTP किंवा इतर authentication code
+        अनोळखी व्यक्तीला देऊ नका.
+      </div>
+
+    </section>
+
+
+    <!-- NAME DOB GENDER -->
+    <section class="info-card">
+
+      <h2>👤 Name, DOB आणि Gender Update</h2>
+
+      <p>
+        Name, Date of Birth, Gender आणि इतर demographic information
+        update करण्यासाठी UIDAI कडे supporting documents आणि
+        verification requirements लागू होतात.
+      </p>
+
+      <h3>काय करावे?</h3>
+
+      <ol>
+        <li>योग्य supporting document तयार ठेवा.</li>
+        <li>Document वरची माहिती तपासा.</li>
+        <li>उपलब्ध online/app service असल्यास ती तपासा.</li>
+        <li>Centre-based service आवश्यक असल्यास Aadhaar Centre ला जा.</li>
+        <li>Operator ने भरलेली माहिती submit करण्यापूर्वी तपासा.</li>
+        <li>Acknowledgement receipt सुरक्षित ठेवा.</li>
+      </ol>
+
+      <div class="notice">
+        <strong>महत्त्वाचे:</strong>
+        प्रत्येक प्रकारच्या correction साठी एकच document लागू असेल असे
+        नाही. संबंधित update साठी UIDAI ची current list of supporting
+        documents तपासा.
+      </div>
+
+    </section>
+
+
+    <!-- BIOMETRIC -->
+    <section class="info-card">
+
+      <h2>👁️ Photo, Fingerprint आणि Iris Update</h2>
+
+      <p>
+        Aadhaar मध्ये biometric information मध्ये facial photograph,
+        fingerprints आणि iris यांचा समावेश होतो.
+      </p>
+
+      <h3>Biometric Update मध्ये काय होऊ शकते?</h3>
+
+      <ul>
+        <li>नवीन photograph capture</li>
+        <li>Fingerprints capture</li>
+        <li>Iris capture</li>
+        <li>लागू असल्यास biometric quality verification</li>
+      </ul>
+
       <div class="success-box">
-        <strong>लक्षात ठेवा:</strong>
-        Online address update साठी Aadhaar ला registered mobile number
-        असणे आवश्यक आहे.
+        UIDAI च्या माहितीनुसार काही वयोगटातील mandatory biometric
+        update साठी शुल्क लागू नसते. लागू वय आणि current validity
+        UIDAI च्या official page वर तपासा.
+      </div>
+
+    </section>
+
+
+    <!-- DOCUMENTS -->
+    <section class="info-card">
+
+      <h2>📄 Aadhaar Update साठी Documents कोणते लागतात?</h2>
+
+      <p>
+        कोणता document लागेल हे तुम्ही कोणती माहिती update करत आहात
+        यावर अवलंबून असते. UIDAI कडे Proof of Identity (POI) आणि
+        Proof of Address (POA) साठी accepted documents ची अधिकृत list
+        उपलब्ध आहे.
+      </p>
+
+      <h3>सामान्यतः लक्षात ठेवायच्या गोष्टी</h3>
+
+      <ul>
+        <li>Valid supporting document वापरा.</li>
+        <li>Document वरची माहिती स्पष्ट असावी.</li>
+        <li>Name आणि spelling तपासा.</li>
+        <li>Address proof असल्यास पूर्ण address तपासा.</li>
+        <li>Centre visit करताना original documents सोबत ठेवणे सुरक्षित.</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>सर्वात महत्त्वाचे:</strong>
+        Documents ची अंतिम accepted list UIDAI च्या official
+        supporting-documents list मधून तपासा.
       </div>
 
     </section>
@@ -398,75 +622,45 @@
       <h2>🏢 Aadhaar Centre वर Update कसा करायचा?</h2>
 
       <ol>
+
         <li>
-          जवळचे Aadhaar Enrolment/Update Centre शोधा.
+          UIDAI च्या official website वरून Aadhaar centre शोधा.
         </li>
 
         <li>
-          ज्या माहितीमध्ये update करायचा आहे त्यानुसार original supporting
-          documents घेऊन जा.
+          ज्या update साठी जाणार आहात त्यानुसार आवश्यक documents घेऊन जा.
         </li>
 
         <li>
-          Operator कडे update request द्या.
+          Operator ला update करण्याची माहिती सांगा.
         </li>
 
         <li>
-          आवश्यक असल्यास biometric authentication / biometric capture
-          केले जाईल.
+          Operator system मध्ये information enter करेल.
         </li>
 
         <li>
-          Operator कडून entered information तपासा.
+          आवश्यक असल्यास biometric authentication/capture केले जाईल.
         </li>
 
         <li>
-          चुकीची spelling किंवा माहिती असल्यास submission करण्यापूर्वी
-          correction सांगा.
+          Submit करण्यापूर्वी screen वरील information स्वतः तपासा.
         </li>
 
         <li>
-          Update request submit झाल्यानंतर acknowledgement receipt घ्या.
+          Request submit झाल्यानंतर acknowledgement receipt घ्या.
         </li>
 
         <li>
-          Receipt वरील Update Request Number / reference details जपून ठेवा.
+          Receipt वरील EID/Update Request details जपून ठेवा.
         </li>
+
       </ol>
 
       <div class="danger-box">
-        <strong>खूप महत्त्वाचे:</strong>
-        Operator ने माहिती भरल्यानंतर submit करण्यापूर्वी स्क्रीनवरील
-        details स्वतः तपासा. चुकीची spelling नंतर correction process
-        करावी लागू शकते.
-      </div>
-
-    </section>
-
-
-    <!-- MOBILE NUMBER -->
-    <section class="info-card">
-
-      <h2>📱 Aadhaar Mobile Number Update कसा करायचा?</h2>
-
-      <p>
-        Aadhaar ला नवीन mobile number जोडायचा किंवा registered mobile
-        number बदलायचा असल्यास Aadhaar Enrolment/Update Centre ला भेट
-        देणे आवश्यक आहे.
-      </p>
-
-      <ol>
-        <li>जवळचे Aadhaar Update Centre शोधा.</li>
-        <li>Aadhaar number घेऊन जा.</li>
-        <li>नवीन mobile number operator ला सांगा.</li>
-        <li>आवश्यक authentication पूर्ण करा.</li>
-        <li>Update request ची acknowledgement receipt घ्या.</li>
-      </ol>
-
-      <div class="notice">
-        <strong>महत्त्वाचे:</strong>
-        UIDAI च्या सध्याच्या माहितीनुसार mobile number online update
-        करण्याची सुविधा नाही.
+        <strong>एक महत्त्वाची सवय:</strong>
+        Operator ने form/system मध्ये माहिती भरल्यानंतर ती स्वतः
+        तपासल्याशिवाय final submission करू देऊ नका.
       </div>
 
     </section>
@@ -479,7 +673,7 @@
 
       <p>
         UIDAI ने Aadhaar services साठी लागू charges निश्चित केले आहेत.
-        Service आणि update च्या प्रकारानुसार fee वेगळी असू शकते.
+        खालील माहिती UIDAI च्या सध्याच्या fee information वर आधारित आहे.
       </p>
 
       <table class="fee-table">
@@ -487,30 +681,55 @@
         <thead>
           <tr>
             <th>Service</th>
-            <th>सध्याची माहिती</th>
+            <th>लागू शुल्क / माहिती</th>
           </tr>
         </thead>
 
         <tbody>
 
           <tr>
-            <td>Demographic Update</td>
-            <td>₹75 पर्यंत लागू शुल्क</td>
+            <td>
+              Demographic Update
+              <br>
+              <small>
+                Name, Gender, DOB, Address, Mobile, Email इ.
+              </small>
+            </td>
+
+            <td>
+              स्वतंत्रपणे केल्यास <strong>₹75</strong>.
+              Biometric update सोबत केल्यास applicable rule नुसार
+              fee वेगळी असू शकते.
+            </td>
           </tr>
 
           <tr>
-            <td>Other Biometric Update</td>
-            <td>₹125</td>
+            <td>
+              Biometric Update
+              <br>
+              <small>
+                Photo, Fingerprints, Iris
+              </small>
+            </td>
+
+            <td>
+              सामान्यतः <strong>₹125</strong>.
+              काही age-based mandatory biometric updates साठी
+              fee-free provisions लागू आहेत.
+            </td>
           </tr>
 
           <tr>
-            <td>PoA/PoI Document Update at Centre</td>
-            <td>₹75</td>
-          </tr>
+            <td>
+              PoA / PoI Document Update
+            </td>
 
-          <tr>
-            <td>Mandatory Biometric Update</td>
-            <td>वय आणि लागू नियमांनुसार Free / applicable charge</td>
+            <td>
+              Aadhaar Centre वर <strong>₹75</strong>.
+              MyAadhaar portal वर document update साठी
+              <strong>14 June 2027 पर्यंत free</strong> अशी UIDAI
+              ची current relaxation आहे.
+            </td>
           </tr>
 
         </tbody>
@@ -518,10 +737,10 @@
       </table>
 
       <div class="notice">
-        <strong>टीप:</strong>
-        Aadhaar charges वेळोवेळी बदलू शकतात. Payment करण्यापूर्वी
-        UIDAI च्या official website किंवा centre वर displayed current
-        charge तपासा.
+        <strong>महत्त्वाचे:</strong>
+        Aadhaar fees आणि temporary fee relaxations बदलू शकतात.
+        Payment करण्यापूर्वी UIDAI च्या official website किंवा
+        centre वर displayed current fee तपासा.
       </div>
 
     </section>
@@ -533,18 +752,35 @@
       <h2>🔎 Aadhaar Update Status कसा Check करायचा?</h2>
 
       <ol>
-        <li>UIDAI च्या My Aadhaar portal वर जा.</li>
-        <li>Check Update Status / संबंधित status service निवडा.</li>
-        <li>तुमचा request/reference number मागितल्यास तो enter करा.</li>
-        <li>Captcha/OTP आवश्यक असल्यास पूर्ण करा.</li>
-        <li>Request ची current status माहिती पहा.</li>
+
+        <li>
+          UIDAI च्या MyAadhaar portal वर जा.
+        </li>
+
+        <li>
+          <strong>Check Update Status</strong> किंवा संबंधित tracking
+          service निवडा.
+        </li>
+
+        <li>
+          मागितलेला request/reference number enter करा.
+        </li>
+
+        <li>
+          आवश्यक authentication पूर्ण करा.
+        </li>
+
+        <li>
+          तुमच्या request ची current status पहा.
+        </li>
+
       </ol>
 
-      <p>
-        UIDAI नुसार update requests verification आणि validation नंतर
-        process होतात. सामान्यतः 90% update requests 30 दिवसांच्या
-        आत पूर्ण होतात.
-      </p>
+      <div class="success-box">
+        UIDAI च्या माहितीनुसार सामान्यतः 90% update requests
+        30 दिवसांच्या आत पूर्ण होतात. मात्र actual processing time
+        verification आणि request प्रकारानुसार बदलू शकतो.
+      </div>
 
     </section>
 
@@ -555,28 +791,30 @@
       <h2>❌ Aadhaar Update Reject झाल्यास काय करायचे?</h2>
 
       <p>
-        Update request verification मध्ये स्वीकारली गेली नाही तर
-        rejection/return चे कारण तपासणे महत्त्वाचे आहे.
+        Aadhaar update request ही verification आणि validation नंतर
+        process होते. Request accepted किंवा rejected होऊ शकते.
       </p>
 
-      <h3>सामान्य कारणे</h3>
+      <h3>सामान्य समस्या</h3>
 
       <ul>
         <li>Supporting document योग्य नसणे</li>
-        <li>Document आणि Aadhaar details मध्ये mismatch</li>
-        <li>Document अस्पष्ट किंवा unreadable असणे</li>
-        <li>चुकीची माहिती enter करणे</li>
-        <li>Spelling mistake</li>
+        <li>Document readable नसणे</li>
+        <li>Information mismatch</li>
+        <li>Name spelling mismatch</li>
+        <li>Address details चुकीचे असणे</li>
         <li>Required verification पूर्ण न होणे</li>
+        <li>Incorrect information submit होणे</li>
       </ul>
 
-      <h3>पुन्हा काय करावे?</h3>
+      <h3>Reject झाल्यानंतर</h3>
 
       <ol>
-        <li>Rejection/return reason तपासा.</li>
-        <li>योग्य supporting document तयार ठेवा.</li>
-        <li>माहिती पुन्हा काळजीपूर्वक verify करा.</li>
-        <li>आवश्यक असल्यास Aadhaar Centre ला भेट द्या.</li>
+        <li>Request status आणि उपलब्ध reason तपासा.</li>
+        <li>योग्य document तयार करा.</li>
+        <li>माहिती पुन्हा verify करा.</li>
+        <li>गरज असल्यास Aadhaar Centre ला भेट द्या.</li>
+        <li>नवीन request करण्यापूर्वी मागील mistake सुधारून घ्या.</li>
       </ol>
 
     </section>
@@ -588,15 +826,72 @@
       <h2>⚠️ Aadhaar Update करताना या चुका टाळा</h2>
 
       <ul>
-        <li>नावाची spelling न तपासता submit करू नका.</li>
-        <li>चुकीचा address enter करू नका.</li>
-        <li>Blurred किंवा unreadable document upload करू नका.</li>
-        <li>OTP कोणालाही सांगू नका.</li>
-        <li>Aadhaar OTP अनोळखी व्यक्तीला देऊ नका.</li>
-        <li>Official UIDAI portal ऐवजी random website वापरू नका.</li>
-        <li>Update request ची acknowledgement receipt हरवू देऊ नका.</li>
-        <li>Agent सांगतो म्हणून अनधिकृत extra fee देऊ नका.</li>
+
+        <li>
+          नावाची spelling तपासल्याशिवाय submit करू नका.
+        </li>
+
+        <li>
+          Date of Birth चुकीची enter करू नका.
+        </li>
+
+        <li>
+          चुकीचा PIN Code टाकू नका.
+        </li>
+
+        <li>
+          Blurred किंवा unreadable document upload करू नका.
+        </li>
+
+        <li>
+          OTP कोणालाही सांगू नका.
+        </li>
+
+        <li>
+          Aadhaar details अनोळखी व्यक्तीसोबत unnecessarily share करू नका.
+        </li>
+
+        <li>
+          Random किंवा unofficial website वर Aadhaar details enter करू नका.
+        </li>
+
+        <li>
+          Centre वर final submission करण्यापूर्वी details तपासा.
+        </li>
+
+        <li>
+          Acknowledgement receipt फेकून देऊ नका.
+        </li>
+
+        <li>
+          अनधिकृत extra charges मागितल्यास UIDAI च्या official
+          grievance/help channels चा वापर करा.
+        </li>
+
       </ul>
+
+    </section>
+
+
+    <!-- SECURITY -->
+    <section class="info-card">
+
+      <h2>🔐 Aadhaar सुरक्षित कसे ठेवायचे?</h2>
+
+      <ul>
+        <li>Aadhaar OTP कोणालाही सांगू नका.</li>
+        <li>Banking PIN आणि Aadhaar OTP कधीही share करू नका.</li>
+        <li>फक्त official UIDAI website/app वापरा.</li>
+        <li>अनावश्यक ठिकाणी Aadhaar copy share करू नका.</li>
+        <li>Public computer वर login केल्यास logout करायला विसरू नका.</li>
+        <li>संशयास्पद calls किंवा messages वर विश्वास ठेवू नका.</li>
+      </ul>
+
+      <div class="danger-box">
+        <strong>लक्षात ठेवा:</strong>
+        UIDAI किंवा इतर कोणतीही legitimate service तुम्हाला OTP
+        फोनवर सांगण्यास सांगत असल्यास सावध रहा. OTP स्वतःकडेच ठेवा.
+      </div>
 
     </section>
 
@@ -607,66 +902,132 @@
       <h2>❓ Aadhaar Update FAQ</h2>
 
       <div class="faq-item">
-        <strong>1. Aadhaar address online update करता येतो का?</strong>
+
+        <strong>
+          1. Aadhaar Address online update करता येतो का?
+        </strong>
+
         <p>
-          हो. UIDAI च्या myAadhaar portal वर उपलब्ध online Address Update
-          service वापरता येते. Registered mobile number आवश्यक आहे.
+          हो. UIDAI च्या MyAadhaar portal वर Address Update service
+          उपलब्ध आहे. Online service वापरण्यासाठी registered mobile
+          number आवश्यक आहे.
         </p>
+
       </div>
 
-      <div class="faq-item">
-        <strong>2. Mobile number online update करता येतो का?</strong>
-        <p>
-          सध्याच्या UIDAI माहितीनुसार mobile number update करण्यासाठी
-          Aadhaar Enrolment/Update Centre ला भेट द्यावी लागते.
-        </p>
-      </div>
 
       <div class="faq-item">
-        <strong>3. Aadhaar मध्ये photo बदलता येतो का?</strong>
+
+        <strong>
+          2. Aadhaar Mobile Number update करता येतो का?
+        </strong>
+
         <p>
-          हो. Photo/biometric update साठी Aadhaar Enrolment/Update Centre
-          ला भेट द्यावी लागते.
+          हो. UIDAI च्या सध्याच्या माहितीनुसार Aadhaar App मध्ये
+          Mobile Number Update service उपलब्ध आहे. Aadhaar Update
+          Centre वरही mobile number update करता येतो.
         </p>
+
       </div>
 
-      <div class="faq-item">
-        <strong>4. Aadhaar update साठी original document घेऊन जावे का?</strong>
-        <p>
-          Centre वर document verification होऊ शकते, त्यामुळे संबंधित
-          original supporting document सोबत घेऊन जाणे योग्य आहे.
-        </p>
-      </div>
 
       <div class="faq-item">
-        <strong>5. Aadhaar update किती दिवसात होते?</strong>
+
+        <strong>
+          3. Aadhaar मध्ये Photo बदलता येतो का?
+        </strong>
+
         <p>
-          UIDAI च्या माहितीनुसार सामान्यतः 90% update requests 30 दिवसांच्या
-          आत पूर्ण होतात; actual time request आणि verification वर अवलंबून
-          असू शकतो.
+          हो. Facial photograph हा biometric information चा भाग आहे.
+          उपलब्ध biometric update service नुसार Aadhaar Centre वर
+          update करता येतो.
         </p>
+
       </div>
 
+
       <div class="faq-item">
-        <strong>6. Aadhaar update करण्यासाठी कुठे जावे?</strong>
+
+        <strong>
+          4. Aadhaar update साठी documents लागतात का?
+        </strong>
+
         <p>
-          Online उपलब्ध service असल्यास myAadhaar portal वापरता येतो.
-          Centre-based update साठी Aadhaar Enrolment/Update Centre शोधता
-          येतो.
+          Update च्या प्रकारानुसार supporting documents लागू होतात.
+          UIDAI ची current list of acceptable documents तपासणे
+          आवश्यक आहे.
         </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <strong>
+          5. Aadhaar update किती दिवसात होते?
+        </strong>
+
+        <p>
+          UIDAI च्या माहितीनुसार सामान्यतः 90% update requests
+          30 दिवसांच्या आत पूर्ण होतात. Actual time request
+          verification वर अवलंबून असतो.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <strong>
+          6. Aadhaar update request चा status कसा पाहायचा?
+        </strong>
+
+        <p>
+          MyAadhaar portal वरील Check Update Status / tracking
+          service वापरून request track करता येते.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <strong>
+          7. Aadhaar update साठी registered mobile number का महत्त्वाचा आहे?
+        </strong>
+
+        <p>
+          MyAadhaar वरील online services साठी registered mobile number
+          आणि OTP-based authentication वापरले जाते.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <strong>
+          8. Aadhaar Centre कुठे शोधायचे?
+        </strong>
+
+        <p>
+          UIDAI च्या official website वरून nearest Aadhaar Centre
+          शोधता येते.
+        </p>
+
       </div>
 
     </section>
 
 
-    <!-- OFFICIAL -->
+    <!-- OFFICIAL SOURCES -->
     <section class="info-card">
 
-      <h2>🔗 Official Aadhaar Website</h2>
+      <h2>🔗 Official Aadhaar Links</h2>
 
       <p>
-        Aadhaar संबंधित कोणतीही महत्त्वाची माहिती, update service किंवा
-        fee तपासण्यासाठी UIDAI च्या official website चा वापर करा.
+        Aadhaar संबंधित कोणतेही form, fee, update, status किंवा
+        service वापरण्यापूर्वी official UIDAI source तपासणे सुरक्षित आहे.
       </p>
 
       <a
@@ -675,30 +1036,28 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        Visit Official UIDAI Website →
+        Official UIDAI Website →
       </a>
 
-      <br><br>
-
       <a
-        class="official-button"
+        class="official-button secondary-button"
         href="https://myaadhaar.uidai.gov.in/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Open MyAadhaar Portal →
+        MyAadhaar Portal →
       </a>
 
     </section>
 
 
-    <!-- BACK -->
+    <!-- HOME -->
     <section class="info-card" style="text-align:center;">
 
-      <h2>💡 आणखी समस्या सोडवायच्या आहेत?</h2>
+      <h2>💡 तुमची दुसरी समस्या आहे?</h2>
 
       <p>
-        तुमची समस्या Kay Karu? वर search करा आणि पुढचा मार्ग शोधा.
+        समस्या काहीही असो, Kay Karu? वर search करा आणि पुढचा मार्ग शोधा.
       </p>
 
       <a href="index.html" class="official-button">
@@ -712,9 +1071,15 @@
 
   <!-- FOOTER -->
   <footer>
+
     <div class="container">
-      <p>© 2026 Kay Karu? — तुमची समस्या सांगा. पुढचा मार्ग शोधा.</p>
+
+      <p>
+        © 2026 Kay Karu? — तुमची समस्या सांगा. पुढचा मार्ग शोधा.
+      </p>
+
     </div>
+
   </footer>
 
 </body>
