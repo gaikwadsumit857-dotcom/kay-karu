@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kay Karu? | तुमच्या समस्येचा सोपा मार्ग</title>
+
+    <meta name="description"
+          content="तुमची समस्या सांगा आणि पुढचा मार्ग सोप्या भाषेत जाणून घ्या.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+
+        <a href="#" class="logo">
+            💡 Kay Karu?
+        </a>
+
+        <nav>
+            <a href="#solutions">उपाय</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="badge">
+            ✨ तुमच्या समस्येचा सोपा मार्ग
+        </div>
+
+        <h1>
+            समस्या कोणतीही असो,<br>
+            <span>पुढचा मार्ग इथे शोधा.</span>
+        </h1>
+
+        <p>
+            तुमची समस्या खाली लिहा आणि पुढे काय करायचे
+            हे सोप्या भाषेत जाणून घ्या.
+        </p>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="problemInput"
+                placeholder="उदा. माझं PAN Card हरवलं आहे..."
+            >
+
+            <button onclick="findSolution()">
+                उपाय शोधा
+            </button>
+
+        </div>
+
+        <div class="examples">
+            <span>उदा.</span>
+
+            <button onclick="setProblem('माझं PAN Card हरवलं आहे')">
+                PAN Card
+            </button>
+
+            <button onclick="setProblem('माझं UPI payment अडकलं आहे')">
+                UPI Payment
+            </button>
+
+            <button onclick="setProblem('मला Income Certificate काढायचं आहे')">
+                Income Certificate
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="result-section" id="resultSection">
+
+    <div class="container">
+
+        <div class="result-card">
+
+            <h2 id="resultTitle"></h2>
+
+            <p id="resultText"></p>
+
+            <div id="resultSteps"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section" id="solutions">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>🔥 लोकप्रिय समस्या</span>
+
+            <h2>लोक काय शोधत आहेत?</h2>
+
+            <p>
+                तुमची समस्या खालीलपैकी एखादी आहे का?
+            </p>
+
+        </div>
+
+
+        <div class="problem-grid">
+
+            <div class="problem-card"
+                 onclick="setProblem('माझं PAN Card हरवलं आहे')">
+
+                <div class="card-icon">🪪</div>
+
+                <h3>PAN Card</h3>
+
+                <p>
+                    PAN Card हरवलं किंवा संबंधित समस्या
+                </p>
+
+                <span>उपाय पहा →</span>
+
+            </div>
+
+
+            <div class="problem-card"
+                 onclick="setProblem('माझं Aadhaar mobile number बदलायचं आहे')">
+
+                <div class="card-icon">🆔</div>
+
+                <h3>Aadhaar</h3>
+
+                <p>
+                    Aadhaar संबंधित सामान्य समस्या
+                </p>
+
+                <span>उपाय पहा →</span>
+
+            </div>
+
+
+            <div class="problem-card"
+                 onclick="setProblem('माझं UPI payment अडकलं आहे')">
+
+                <div class="card-icon">💳</div>
+
+                <h3>UPI Payment</h3>
+
+                <p>
+                    Payment failed किंवा pending
+                </p>
+
+                <span>उपाय पहा →</span>
+
+            </div>
+
+
+            <div class="problem-card"
+                 onclick="setProblem('मला Income Certificate काढायचं आहे')">
+
+                <div class="card-icon">📄</div>
+
+                <h3>Income Certificate</h3>
+
+                <p>
+                    Documents आणि application माहिती
+                </p>
+
+                <span>उपाय पहा →</span>
+
+            </div>
+
+
+            <div class="problem-card"
+                 onclick="setProblem('मला Caste Certificate काढायचं आहे')">
+
+                <div class="card-icon">📋</div>
+
+                <h3>Caste Certificate</h3>
+
+                <p>
+                    Certificate application माहिती
+                </p>
+
+                <span>उपाय पहा →</span>
+
+            </div>
+
+
+            <div class="problem-card"
+                 onclick="setProblem('माझं Driving Licence renew करायचं आहे')">
+
+                <div class="card-icon">🚗</div>
+
+                <h3>Driving Licence</h3>
+
+                <p>
+                    Licence renewal संबंधित माहिती
+                </p>
+
+                <span>उपाय पहा →</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section categories" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>📚 Categories</span>
+
+            <h2>तुमची समस्या कोणत्या प्रकारची?</h2>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                🏛️
+                <h3>Government Services</h3>
+                <p>सरकारी कामे आणि services</p>
+            </div>
+
+            <div class="category-card">
+                📄
+                <h3>Documents</h3>
+                <p>Certificates आणि documents</p>
+            </div>
+
+            <div class="category-card">
+                📱
+                <h3>Digital Problems</h3>
+                <p>Apps, UPI आणि online समस्या</p>
+            </div>
+
+            <div class="category-card">
+                💼
+                <h3>Jobs & Work</h3>
+                <p>Job related help</p>
+            </div>
+
+            <div class="category-card">
+                🚗
+                <h3>Vehicle</h3>
+                <p>Licence आणि vehicle services</p>
+            </div>
+
+            <div class="category-card">
+                🛠️
+                <h3>Online Errors</h3>
+                <p>Website आणि form errors</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <span>💡 About Kay Karu?</span>
+
+        <h2>
+            माहिती शोधण्यापेक्षा<br>
+            उपाय शोधणे सोपे करूया.
+        </h2>
+
+        <p>
+            Kay Karu? हे सामान्य लोकांना त्यांच्या
+            रोजच्या समस्या समजून घेण्यासाठी आणि
+            पुढची योग्य पायरी शोधण्यासाठी तयार केलेले
+            platform आहे.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+
+        <h3>💡 Kay Karu?</h3>
+
+        <p>
+            तुमच्या समस्येचा सोपा मार्ग.
+        </p>
+
+        <div class="copyright">
+            © 2026 Kay Karu? All Rights Reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
