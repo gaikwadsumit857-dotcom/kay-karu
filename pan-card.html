@@ -4,175 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PAN Card कसा काढायचा? | New PAN, Correction, e-PAN | Kay Karu?</title>
+    <title>PAN Card कसा काढायचा? | New PAN, Correction, Lost PAN | Kay Karu?</title>
 
     <meta name="description"
-          content="PAN Card कसा काढायचा, Instant e-PAN, PAN correction, lost PAN, e-PAN download, documents, process आणि official information मराठीत जाणून घ्या.">
+          content="PAN Card कसा काढायचा, New PAN, Instant e-PAN, PAN correction, PAN card हरवल्यास काय करायचे, e-PAN download, documents, fees, status आणि official information मराठीत.">
 
     <meta name="keywords"
-          content="PAN Card Maharashtra, PAN Card apply, Instant e-PAN, PAN correction, lost PAN, e-PAN download, PAN card documents">
+          content="PAN Card, PAN Card Maharashtra, PAN apply, Instant e-PAN, PAN correction, lost PAN card, e-PAN download, PAN documents">
 
     <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .info-page {
-            padding: 50px 0 80px;
+
+        * {
+            box-sizing: border-box;
         }
 
-        .info-hero {
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .pan-page {
+            padding: 35px 0 70px;
+        }
+
+        .pan-container {
+            width: 100%;
+            max-width: 1050px;
+            margin: auto;
+            padding: 0 16px;
+        }
+
+        /* HERO */
+
+        .pan-hero {
             text-align: center;
-            max-width: 850px;
-            margin: 0 auto 40px;
+            margin-bottom: 35px;
         }
 
-        .info-hero .badge {
+        .pan-badge {
             display: inline-block;
-            margin-bottom: 18px;
-        }
-
-        .info-hero h1 {
-            font-size: 42px;
-            line-height: 1.2;
-            margin-bottom: 18px;
-        }
-
-        .info-hero p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #555;
-        }
-
-        .info-card {
-            background: #fff;
-            border: 1px solid #e5e7eb;
-            border-radius: 18px;
-            padding: 30px;
-            margin-bottom: 24px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-        }
-
-        .info-card h2 {
+            background: #eef2ff;
+            color: #3730a3;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
             margin-bottom: 15px;
-            font-size: 26px;
         }
 
-        .info-card h3 {
-            margin-top: 22px;
-            margin-bottom: 10px;
-            font-size: 20px;
+        .pan-hero h1 {
+            font-size: 42px;
+            line-height: 1.25;
+            margin: 0 0 15px;
         }
 
-        .info-card p {
+        .pan-hero p {
+            max-width: 760px;
+            margin: auto;
+            font-size: 17px;
             line-height: 1.8;
             color: #555;
         }
 
-        .info-card ul,
-        .info-card ol {
-            padding-left: 25px;
-            line-height: 1.9;
+        /* CONTENT CARD */
+
+        .pan-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 22px;
+            box-shadow: 0 7px 25px rgba(0,0,0,0.05);
+        }
+
+        .pan-card h2 {
+            font-size: 25px;
+            line-height: 1.4;
+            margin: 0 0 15px;
+        }
+
+        .pan-card h3 {
+            font-size: 19px;
+            line-height: 1.5;
+            margin: 22px 0 9px;
+        }
+
+        .pan-card p {
+            font-size: 16px;
+            line-height: 1.85;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        .pan-card ul,
+        .pan-card ol {
+            padding-left: 23px;
+            margin-top: 12px;
+        }
+
+        .pan-card li {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 8px;
             color: #444;
         }
 
-        .info-card li {
-            margin-bottom: 7px;
-        }
+        /* STEP */
 
-        .note {
-            background: #fff8e1;
-            border-left: 5px solid #f59e0b;
-            padding: 18px;
-            border-radius: 10px;
-            margin-top: 18px;
-            line-height: 1.7;
-        }
-
-        .success-note {
-            background: #ecfdf5;
-            border-left: 5px solid #10b981;
-            padding: 18px;
-            border-radius: 10px;
-            margin-top: 18px;
-            line-height: 1.7;
-        }
-
-        .danger-note {
-            background: #fef2f2;
-            border-left: 5px solid #ef4444;
-            padding: 18px;
-            border-radius: 10px;
-            margin-top: 18px;
-            line-height: 1.7;
-        }
-
-        .step {
+        .step-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 18px;
-            margin: 12px 0;
             border: 1px solid #e5e7eb;
+            border-radius: 13px;
+            padding: 17px;
+            margin: 12px 0;
         }
 
-        .step strong {
-            display: block;
+        .step-number {
+            font-weight: 700;
+            font-size: 17px;
             margin-bottom: 6px;
         }
 
-        .official-button {
+        .step-box p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        /* NOTES */
+
+        .note {
+            padding: 17px;
+            border-radius: 12px;
+            margin-top: 17px;
+            line-height: 1.75;
+            background: #fff8e1;
+            border-left: 5px solid #f59e0b;
+        }
+
+        .success-note {
+            padding: 17px;
+            border-radius: 12px;
+            margin-top: 17px;
+            line-height: 1.75;
+            background: #ecfdf5;
+            border-left: 5px solid #10b981;
+        }
+
+        .danger-note {
+            padding: 17px;
+            border-radius: 12px;
+            margin-top: 17px;
+            line-height: 1.75;
+            background: #fef2f2;
+            border-left: 5px solid #ef4444;
+        }
+
+        /* TABLE */
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+
+        .fee-table {
+            width: 100%;
+            min-width: 600px;
+            border-collapse: collapse;
+        }
+
+        .fee-table th,
+        .fee-table td {
+            border: 1px solid #e5e7eb;
+            padding: 13px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .fee-table th {
+            background: #f8fafc;
+        }
+
+        /* OFFICIAL BUTTON */
+
+        .official-btn {
             display: inline-block;
-            margin-top: 12px;
-            padding: 13px 22px;
-            border-radius: 10px;
+            margin-top: 10px;
+            padding: 13px 21px;
             background: #111827;
             color: #fff;
             text-decoration: none;
+            border-radius: 10px;
             font-weight: 600;
         }
 
-        .back-button {
+        .official-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* BACK */
+
+        .back-area {
             text-align: center;
             margin-top: 35px;
         }
 
-        .back-button a {
+        .back-btn {
             display: inline-block;
             padding: 13px 22px;
             background: #111827;
             color: #fff;
-            border-radius: 10px;
             text-decoration: none;
+            border-radius: 10px;
             font-weight: 600;
         }
 
-        @media (max-width: 600px) {
-            .info-page {
-                padding: 35px 0 60px;
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .pan-page {
+                padding: 25px 0 50px;
             }
 
-            .info-hero h1 {
-                font-size: 31px;
+            .pan-container {
+                padding: 0 13px;
             }
 
-            .info-hero p {
+            .pan-hero {
+                margin-bottom: 25px;
+            }
+
+            .pan-hero h1 {
+                font-size: 30px;
+                line-height: 1.3;
+            }
+
+            .pan-hero p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            .pan-card {
+                padding: 20px 17px;
+                border-radius: 15px;
+                margin-bottom: 17px;
+            }
+
+            .pan-card h2 {
+                font-size: 21px;
+            }
+
+            .pan-card h3 {
+                font-size: 18px;
+            }
+
+            .pan-card p,
+            .pan-card li {
+                font-size: 15px;
+                line-height: 1.75;
+            }
+
+            .pan-card ul,
+            .pan-card ol {
+                padding-left: 21px;
+            }
+
+            .step-box {
+                padding: 15px;
+            }
+
+            .step-number {
                 font-size: 16px;
             }
 
-            .info-card {
-                padding: 22px;
+            .step-box p {
+                font-size: 14px;
             }
 
-            .info-card h2 {
-                font-size: 23px;
+            .official-btn,
+            .back-btn {
+                width: 100%;
+                text-align: center;
             }
+
         }
+
     </style>
 </head>
 
+
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
+
     <div class="container nav">
 
         <a href="index.html" class="logo">
@@ -185,415 +316,627 @@
         </nav>
 
     </div>
+
 </header>
 
 
-<main class="info-page">
+<!-- MAIN -->
 
-    <div class="container">
+<main class="pan-page">
 
-        <!-- HERO -->
+<div class="pan-container">
 
-        <div class="info-hero">
 
-            <div class="badge">
-                🪪 PAN Card
+    <!-- HERO -->
+
+    <section class="pan-hero">
+
+        <div class="pan-badge">
+            🪪 PAN Card Guide
+        </div>
+
+        <h1>
+            PAN Card कसा काढायचा?
+        </h1>
+
+        <p>
+            New PAN, Instant e-PAN, PAN correction,
+            PAN Card हरवल्यास काय करायचे, e-PAN download,
+            documents, status आणि महत्त्वाच्या सूचना
+            एका ठिकाणी जाणून घ्या.
+        </p>
+
+    </section>
+
+
+    <!-- 1 -->
+
+    <section class="pan-card">
+
+        <h2>📌 PAN Card म्हणजे काय?</h2>
+
+        <p>
+            PAN म्हणजे <strong>Permanent Account Number</strong>.
+            हा Income Tax Department कडून दिला जाणारा
+            unique identification number आहे.
+        </p>
+
+        <p>
+            PAN चा उपयोग Income Tax संबंधित कामे,
+            काही आर्थिक व्यवहार आणि विविध financial
+            services मध्ये ओळख म्हणून केला जातो.
+        </p>
+
+        <div class="note">
+            <strong>महत्त्वाचे:</strong>
+            PAN हा तुमच्यासाठी unique number असतो.
+            त्यामुळे PAN आधीच allot झालेला असल्यास
+            पुन्हा नवीन PAN साठी अर्ज करू नका.
+        </div>
+
+    </section>
+
+
+    <!-- 2 -->
+
+    <section class="pan-card">
+
+        <h2>🆕 नवीन PAN Card काढण्यासाठी पर्याय</h2>
+
+        <p>
+            नवीन PAN साठी application करण्याचे वेगवेगळे
+            अधिकृत मार्ग उपलब्ध आहेत.
+        </p>
+
+        <h3>1. Instant e-PAN</h3>
+
+        <p>
+            Eligible individuals साठी Income Tax Department
+            कडून Instant e-PAN सुविधा उपलब्ध आहे.
+        </p>
+
+        <h3>2. PAN Application</h3>
+
+        <p>
+            लागू असलेल्या परिस्थितीनुसार authorised PAN
+            application channel द्वारे PAN application करता येतो.
+        </p>
+
+        <div class="success-note">
+            <strong>टीप:</strong>
+            अर्ज करण्यापूर्वी official Income Tax Department
+            portal वरील current instructions तपासा.
+        </div>
+
+    </section>
+
+
+    <!-- 3 -->
+
+    <section class="pan-card">
+
+        <h2>✅ Instant e-PAN साठी कोण पात्र असू शकते?</h2>
+
+        <ul>
+            <li>अर्जदाराकडे आधीपासून PAN allot झालेला नसावा.</li>
+            <li>Valid Aadhaar उपलब्ध असणे आवश्यक आहे.</li>
+            <li>Aadhaar ला mobile number linked असणे आवश्यक आहे.</li>
+            <li>लागू असलेल्या Income Tax Department eligibility conditions पूर्ण असणे आवश्यक आहे.</li>
+        </ul>
+
+        <div class="danger-note">
+
+            <strong>लक्षात ठेवा:</strong>
+
+            आधीच PAN number असलेल्या व्यक्तीने
+            नवीन PAN घेण्यासाठी Instant e-PAN चा
+            वापर करू नये.
+
+        </div>
+
+    </section>
+
+
+    <!-- 4 -->
+
+    <section class="pan-card">
+
+        <h2>📄 PAN Card साठी आवश्यक माहिती / Documents</h2>
+
+        <p>
+            अर्जाच्या प्रकारानुसार documents आणि
+            verification requirements बदलू शकतात.
+        </p>
+
+        <h3>Instant e-PAN साठी</h3>
+
+        <ul>
+            <li>Valid Aadhaar Number</li>
+            <li>Aadhaar-linked active mobile number</li>
+            <li>आवश्यक personal information</li>
+            <li>Portal वर मागितलेली verification information</li>
+        </ul>
+
+        <h3>सामान्य PAN application साठी</h3>
+
+        <ul>
+            <li>Identity proof</li>
+            <li>Address proof</li>
+            <li>Date of Birth proof</li>
+            <li>लागू असलेला photograph / supporting information</li>
+        </ul>
+
+        <div class="note">
+            <strong>टीप:</strong>
+            Exact document requirements अर्जाच्या प्रकारावर
+            आणि applicant category वर अवलंबून असू शकतात.
+        </div>
+
+    </section>
+
+
+    <!-- 5 -->
+
+    <section class="pan-card">
+
+        <h2>📝 Instant e-PAN Online कसा काढायचा?</h2>
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 1 — Official Website उघडा
             </div>
 
-            <h1>
-                PAN Card कसा काढायचा?
-            </h1>
-
             <p>
-                New PAN, Instant e-PAN, PAN correction, PAN हरवल्यास काय करायचे,
-                e-PAN download आणि आवश्यक माहिती सोप्या भाषेत जाणून घ्या.
+                Income Tax Department च्या official
+                e-Filing portal वर जा.
             </p>
 
         </div>
 
 
-        <!-- WHAT IS PAN -->
+        <div class="step-box">
 
-        <section class="info-card">
-
-            <h2>📌 PAN Card म्हणजे काय?</h2>
-
-            <p>
-                PAN म्हणजे Permanent Account Number.
-                हा Income Tax Department कडून दिला जाणारा
-                unique identification number आहे.
-            </p>
-
-            <p>
-                Income Tax, financial transactions आणि अनेक
-                आर्थिक कामांसाठी PAN चा उपयोग होतो.
-            </p>
-
-        </section>
-
-
-        <!-- NEW PAN -->
-
-        <section class="info-card">
-
-            <h2>🆕 नवीन PAN Card काढायचा असल्यास</h2>
-
-            <p>
-                जर तुमच्याकडे यापूर्वी PAN allot झालेला नसेल,
-                तर eligible individual साठी Income Tax Department च्या
-                Instant e-PAN सुविधेचा वापर करता येतो.
-            </p>
-
-            <div class="success-note">
-                <strong>महत्त्वाचे:</strong>
-                Instant e-PAN सेवा eligible individual साठी
-                विनामूल्य आहे.
+            <div class="step-number">
+                Step 2 — Instant e-PAN निवडा
             </div>
 
-        </section>
-
-
-        <!-- ELIGIBILITY -->
-
-        <section class="info-card">
-
-            <h2>✅ Instant e-PAN साठी कोण पात्र आहे?</h2>
-
-            <ul>
-                <li>तुम्हाला यापूर्वी PAN allot झालेला नसावा.</li>
-                <li>Valid Aadhaar असणे आवश्यक आहे.</li>
-                <li>Aadhaar ला active mobile number linked असणे आवश्यक आहे.</li>
-                <li>अर्जाच्या वेळी व्यक्ती minor नसावी.</li>
-                <li>लागू असलेल्या इतर eligibility conditions पूर्ण असणे आवश्यक आहे.</li>
-            </ul>
-
-            <div class="danger-note">
-                <strong>लक्षात ठेवा:</strong>
-                आधीच PAN allot झालेला असेल तर Instant e-PAN वापरून
-                नवीन PAN घेता येत नाही.
-            </div>
-
-        </section>
-
-
-        <!-- DOCUMENTS -->
-
-        <section class="info-card">
-
-            <h2>📄 आवश्यक माहिती / Documents</h2>
-
             <p>
-                Instant e-PAN साठी सामान्यतः:
+                Portal वर उपलब्ध असलेल्या
+                <strong>Instant e-PAN</strong> service वर जा.
             </p>
 
-            <ul>
-                <li>Valid Aadhaar Number</li>
-                <li>Aadhaar ला linked active mobile number</li>
-                <li>आवश्यक KYC information</li>
-                <li>DigiLocker access लागू असल्यास आवश्यक असू शकतो</li>
-            </ul>
+        </div>
+
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 3 — Get New e-PAN
+            </div>
 
             <p>
-                DigiLocker मधून उपलब्ध असलेल्या supporting document चा
-                वापर काही परिस्थितींमध्ये केला जाऊ शकतो.
-            </p>
-
-        </section>
-
-
-        <!-- STEP BY STEP -->
-
-        <section class="info-card">
-
-            <h2>📝 Instant e-PAN Online कसा काढायचा?</h2>
-
-            <div class="step">
-                <strong>Step 1 — Income Tax e-Filing Portal उघडा</strong>
-                Income Tax Department च्या e-Filing portal वर जा.
-            </div>
-
-            <div class="step">
-                <strong>Step 2 — Instant e-PAN निवडा</strong>
-                Homepage वरील Quick Links मध्ये
-                <strong>Instant e-PAN</strong> option निवडा.
-            </div>
-
-            <div class="step">
-                <strong>Step 3 — Get New e-PAN</strong>
+                नवीन PAN साठी उपलब्ध
                 <strong>Get New e-PAN</strong> option निवडा.
-            </div>
-
-            <div class="step">
-                <strong>Step 4 — Aadhaar Number</strong>
-                तुमचा 12-digit Aadhaar number enter करा
-                आणि आवश्यक declarations/consent पूर्ण करा.
-            </div>
-
-            <div class="step">
-                <strong>Step 5 — OTP Verification</strong>
-                Aadhaar-linked mobile number वर आलेला OTP
-                enter करून verification पूर्ण करा.
-            </div>
-
-            <div class="step">
-                <strong>Step 6 — Request Submit</strong>
-                आवश्यक verification पूर्ण झाल्यानंतर
-                e-PAN request submit करा.
-            </div>
-
-            <div class="step">
-                <strong>Step 7 — Status / Download</strong>
-                Request process झाल्यानंतर status check करून
-                उपलब्ध असल्यास e-PAN view किंवा download करता येतो.
-            </div>
-
-            <div class="note">
-                Income Tax Department च्या current guide नुसार
-                OTP verification आणि request status साठी e-Filing portal
-                वर उपलब्ध instructions follow करणे आवश्यक आहे.
-            </div>
-
-        </section>
-
-
-        <!-- LOST PAN -->
-
-        <section class="info-card">
-
-            <h2>❌ PAN Card हरवलं तर काय करायचं?</h2>
-
-            <p>
-                PAN Card हरवले म्हणून नवीन PAN number साठी
-                पुन्हा अर्ज करू नका.
             </p>
-
-            <p>
-                तुमचा PAN number आधीच allot झालेला असल्यास
-                duplicate PAN निर्माण करण्याऐवजी available
-                reprint / e-PAN सुविधा वापरणे योग्य आहे.
-            </p>
-
-            <div class="danger-note">
-                <strong>महत्त्वाचे:</strong>
-                एका व्यक्तीकडे एकापेक्षा जास्त PAN ठेवणे टाळा.
-                PAN हरवल्यास नवीन PAN number घेण्याऐवजी
-                existing PAN साठी योग्य reprint / download प्रक्रिया वापरा.
-            </div>
-
-        </section>
-
-
-        <!-- PAN CORRECTION -->
-
-        <section class="info-card">
-
-            <h2>✏️ PAN मध्ये चुकीचे नाव / DOB / इतर माहिती असल्यास</h2>
-
-            <p>
-                PAN details मध्ये correction आवश्यक असल्यास
-                PAN correction ची अधिकृत प्रक्रिया वापरावी.
-            </p>
-
-            <h3>सामान्यतः तपासायच्या गोष्टी</h3>
-
-            <ul>
-                <li>Name spelling</li>
-                <li>Date of Birth</li>
-                <li>Gender</li>
-                <li>Photo</li>
-                <li>Mobile Number</li>
-                <li>Email ID</li>
-                <li>Address</li>
-            </ul>
-
-            <div class="note">
-                Aadhaar e-KYC वर आधारित Instant e-PAN मध्ये
-                काही PAN details Aadhaar details प्रमाणे update
-                करण्याची सुविधा उपलब्ध आहे; कोणते details update
-                करता येतात हे current Income Tax Department instructions
-                नुसार तपासा.
-            </div>
-
-        </section>
-
-
-        <!-- E PAN -->
-
-        <section class="info-card">
-
-            <h2>📱 e-PAN म्हणजे काय?</h2>
-
-            <p>
-                e-PAN हा digitally signed electronic PAN document आहे.
-                Eligible Instant e-PAN process मध्ये तो electronic स्वरूपात
-                मिळू शकतो.
-            </p>
-
-            <p>
-                Income Tax Department च्या माहितीनुसार eligible
-                Instant e-PAN service विनामूल्य आहे.
-            </p>
-
-        </section>
-
-
-        <!-- PHYSICAL CARD -->
-
-        <section class="info-card">
-
-            <h2>💳 Physical PAN Card हवा असल्यास</h2>
-
-            <p>
-                PAN allot झाल्यानंतर physical PAN card हवा असल्यास
-                उपलब्ध official reprint / physical card request
-                process वापरता येतो.
-            </p>
-
-            <p>
-                Physical card साठी applicable charges आणि process
-                संबंधित authorised service provider च्या current
-                instructions प्रमाणे तपासा.
-            </p>
-
-        </section>
-
-
-        <!-- COMMON MISTAKES -->
-
-        <section class="info-card">
-
-            <h2>⚠️ PAN अर्ज करताना या चुका टाळा</h2>
-
-            <ul>
-                <li>Aadhaar मधील नाव आणि PAN application मधील माहिती तपासा.</li>
-                <li>Aadhaar-linked mobile number active ठेवा.</li>
-                <li>OTP कोणालाही share करू नका.</li>
-                <li>एक PAN असताना दुसऱ्या PAN साठी पुन्हा अर्ज करू नका.</li>
-                <li>Fake PAN websites किंवा unknown links वर personal information देऊ नका.</li>
-                <li>Official Income Tax Department website वरूनच process सुरू करा.</li>
-            </ul>
-
-        </section>
-
-
-        <!-- STATUS -->
-
-        <section class="info-card">
-
-            <h2>🔎 PAN Application Status कसा तपासायचा?</h2>
-
-            <ol>
-                <li>Official Income Tax e-Filing portal उघडा.</li>
-                <li>तुमच्या PAN/e-PAN service शी संबंधित status option निवडा.</li>
-                <li>Portal वर मागितलेली माहिती enter करा.</li>
-                <li>Screen वर application/request status तपासा.</li>
-            </ol>
-
-            <p>
-                Instant e-PAN request साठी Income Tax Department च्या
-                portal वर pending request status आणि e-PAN download
-                करण्याची सुविधा उपलब्ध आहे.
-            </p>
-
-        </section>
-
-
-        <!-- IF APPLICATION FAILS -->
-
-        <section class="info-card">
-
-            <h2>❗ e-PAN Request Failed झाल्यास</h2>
-
-            <p>
-                Request failed झाल्यास screen वर दाखवलेला
-                reason प्रथम तपासा.
-            </p>
-
-            <ul>
-                <li>Aadhaar details mismatch आहे का ते तपासा.</li>
-                <li>Aadhaar mobile number active आहे का ते तपासा.</li>
-                <li>OTP verification योग्य झाले आहे का ते तपासा.</li>
-                <li>तुमच्याकडे आधीच PAN allot झालेला आहे का ते तपासा.</li>
-                <li>Portal वरील current instructions follow करा.</li>
-            </ul>
-
-        </section>
-
-
-        <!-- FAQ -->
-
-        <section class="info-card">
-
-            <h2>❓ PAN Card FAQ</h2>
-
-            <h3>1. Instant e-PAN साठी पैसे लागतात का?</h3>
-
-            <p>
-                Eligible Instant e-PAN service विनामूल्य आहे.
-            </p>
-
-
-            <h3>2. PAN आधीच आहे पण Card हरवला आहे, तर नवीन PAN घेऊ शकतो का?</h3>
-
-            <p>
-                नाही. आधीच PAN allot झालेला असल्यास Instant e-PAN
-                द्वारे नवीन PAN घेता येत नाही. Existing PAN साठी
-                reprint / e-PAN download ची योग्य प्रक्रिया वापरा.
-            </p>
-
-
-            <h3>3. Aadhaar ला mobile number linked नसेल तर?</h3>
-
-            <p>
-                Instant e-PAN साठी Aadhaar-linked active mobile
-                आवश्यक आहे. अशा परिस्थितीत आधी Aadhaar-related
-                mobile update प्रक्रिया पूर्ण करावी लागू शकते.
-            </p>
-
-
-            <h3>4. e-PAN download करता येतो का?</h3>
-
-            <p>
-                हो. Request generate/allot झाल्यानंतर portal वर
-                उपलब्ध असल्यास e-PAN view किंवा download करता येतो.
-            </p>
-
-        </section>
-
-
-        <!-- OFFICIAL -->
-
-        <section class="info-card">
-
-            <h2>🔗 Official Website</h2>
-
-            <p>
-                PAN संबंधित कामासाठी Income Tax Department ची
-                official website वापरा.
-            </p>
-
-            <a class="official-button"
-               href="https://www.incometax.gov.in/"
-               target="_blank"
-               rel="noopener">
-                Income Tax Department ↗
-            </a>
-
-        </section>
-
-
-        <div class="back-button">
-
-            <a href="government-services.html">
-                ← Government Services वर जा
-            </a>
 
         </div>
+
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 4 — Aadhaar Number
+            </div>
+
+            <p>
+                तुमचा Aadhaar number enter करा आणि
+                portal वर दाखवलेल्या instructions follow करा.
+            </p>
+
+        </div>
+
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 5 — OTP Verification
+            </div>
+
+            <p>
+                Aadhaar-linked mobile number वर आलेला
+                OTP enter करून verification पूर्ण करा.
+            </p>
+
+        </div>
+
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 6 — Request Submit
+            </div>
+
+            <p>
+                आवश्यक declarations आणि verification
+                पूर्ण करून request submit करा.
+            </p>
+
+        </div>
+
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 7 — Status Check
+            </div>
+
+            <p>
+                Request submit केल्यानंतर portal वरून
+                request status तपासा.
+            </p>
+
+        </div>
+
+
+        <div class="step-box">
+
+            <div class="step-number">
+                Step 8 — e-PAN Download
+            </div>
+
+            <p>
+                e-PAN उपलब्ध झाल्यानंतर portal वरून
+                उपलब्ध download/view option वापरा.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 6 -->
+
+    <section class="pan-card">
+
+        <h2>💰 PAN Card साठी किती पैसे लागतात?</h2>
+
+        <p>
+            Charges हे तुम्ही वापरत असलेल्या PAN service,
+            application type आणि physical card request
+            यावर अवलंबून असू शकतात.
+        </p>
+
+        <div class="table-wrapper">
+
+            <table class="fee-table">
+
+                <tr>
+                    <th>Service</th>
+                    <th>Charges</th>
+                </tr>
+
+                <tr>
+                    <td>Eligible Instant e-PAN</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td>Physical PAN / Reprint</td>
+                    <td>Applicable charges</td>
+                </tr>
+
+                <tr>
+                    <td>PAN Correction</td>
+                    <td>Applicable charges</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="note">
+            <strong>महत्त्वाचे:</strong>
+            Exact current fee payment करण्यापूर्वी
+            official portal वर तपासा.
+        </div>
+
+    </section>
+
+
+    <!-- 7 -->
+
+    <section class="pan-card">
+
+        <h2>❌ PAN Card हरवलं तर काय करायचं?</h2>
+
+        <p>
+            PAN Card हरवल्यास घाबरण्याची गरज नाही.
+            तुमचा PAN number बदलत नाही.
+        </p>
+
+        <ol>
+            <li>तुमचा existing PAN number शोधा.</li>
+            <li>नवीन PAN number साठी पुन्हा अर्ज करू नका.</li>
+            <li>e-PAN उपलब्ध असल्यास download करा.</li>
+            <li>Physical PAN हवा असल्यास authorised reprint process वापरा.</li>
+        </ol>
+
+        <div class="danger-note">
+
+            <strong>खूप महत्त्वाचे:</strong>
+
+            एका व्यक्तीकडे एकापेक्षा जास्त PAN असणे
+            समस्या निर्माण करू शकते. PAN हरवल्यामुळे
+            नवीन PAN number घेऊ नका.
+
+        </div>
+
+    </section>
+
+
+    <!-- 8 -->
+
+    <section class="pan-card">
+
+        <h2>✏️ PAN Card मध्ये नाव चुकीचे असल्यास</h2>
+
+        <p>
+            PAN details मध्ये नाव, Date of Birth किंवा
+            इतर माहिती चुकीची असल्यास PAN correction
+            process वापरावी.
+        </p>
+
+        <h3>Correction करण्यापूर्वी तपासा</h3>
+
+        <ul>
+            <li>Name spelling</li>
+            <li>Date of Birth</li>
+            <li>Gender</li>
+            <li>Photo</li>
+            <li>Mobile Number</li>
+            <li>Email ID</li>
+            <li>Address</li>
+        </ul>
+
+        <div class="note">
+            Correction साठी योग्य supporting documents
+            लागू शकतात. Application submit करण्यापूर्वी
+            current official requirements तपासा.
+        </div>
+
+    </section>
+
+
+    <!-- 9 -->
+
+    <section class="pan-card">
+
+        <h2>📱 e-PAN म्हणजे काय?</h2>
+
+        <p>
+            e-PAN म्हणजे PAN चे electronic स्वरूपातील
+            digitally signed document.
+        </p>
+
+        <p>
+            Eligible Instant e-PAN process मधून e-PAN
+            electronic स्वरूपात उपलब्ध होऊ शकतो.
+        </p>
+
+        <div class="success-note">
+            e-PAN मिळाल्यानंतर त्याची सुरक्षित digital copy
+            ठेवणे उपयोगी ठरू शकते.
+        </div>
+
+    </section>
+
+
+    <!-- 10 -->
+
+    <section class="pan-card">
+
+        <h2>💳 Physical PAN Card हवा असल्यास</h2>
+
+        <p>
+            e-PAN मिळाल्यानंतर physical PAN card ची
+            आवश्यकता असल्यास उपलब्ध authorised
+            reprint / physical card service वापरता येते.
+        </p>
+
+        <p>
+            Physical card साठी applicable charges आणि
+            delivery details official service provider च्या
+            current information नुसार तपासा.
+        </p>
+
+    </section>
+
+
+    <!-- 11 -->
+
+    <section class="pan-card">
+
+        <h2>🔎 PAN Application / Request Status</h2>
+
+        <ol>
+            <li>Official Income Tax e-Filing portal उघडा.</li>
+            <li>तुमच्या PAN service शी संबंधित option निवडा.</li>
+            <li>Portal वर मागितलेली माहिती enter करा.</li>
+            <li>Application / request status तपासा.</li>
+        </ol>
+
+        <div class="note">
+            Status check करण्यासाठी third-party unknown
+            websites वर PAN किंवा Aadhaar details देऊ नका.
+        </div>
+
+    </section>
+
+
+    <!-- 12 -->
+
+    <section class="pan-card">
+
+        <h2>⚠️ PAN अर्ज करताना होणाऱ्या सामान्य चुका</h2>
+
+        <ul>
+            <li>नावाची spelling चुकीची टाकणे.</li>
+            <li>Date of Birth चुकीची टाकणे.</li>
+            <li>Aadhaar details mismatch असणे.</li>
+            <li>Aadhaar-linked mobile active नसणे.</li>
+            <li>OTP चुकीचा enter करणे.</li>
+            <li>आधीच PAN असून नवीन PAN साठी अर्ज करणे.</li>
+            <li>Unknown website वर personal information देणे.</li>
+            <li>OTP किंवा sensitive information दुसऱ्याला देणे.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- 13 -->
+
+    <section class="pan-card">
+
+        <h2>❗ Instant e-PAN Request Failed झाल्यास</h2>
+
+        <p>
+            Request failed झाल्यास सर्वप्रथम portal वर
+            दाखवलेला reason तपासा.
+        </p>
+
+        <ul>
+            <li>Aadhaar details तपासा.</li>
+            <li>Aadhaar-linked mobile number तपासा.</li>
+            <li>OTP verification पुन्हा तपासा.</li>
+            <li>तुमच्याकडे आधीच PAN आहे का ते तपासा.</li>
+            <li>Portal वरील current instructions follow करा.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- 14 -->
+
+    <section class="pan-card">
+
+        <h2>🔐 PAN सुरक्षित ठेवण्यासाठी</h2>
+
+        <ul>
+            <li>PAN number अनोळखी व्यक्तींना share करू नका.</li>
+            <li>OTP कोणालाही सांगू नका.</li>
+            <li>Fake websites पासून सावध रहा.</li>
+            <li>Official Income Tax website चा वापर करा.</li>
+            <li>Public Wi-Fi वर sensitive financial information देताना काळजी घ्या.</li>
+            <li>PAN documents सुरक्षित ठेवा.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="pan-card">
+
+        <h2>❓ PAN Card FAQ</h2>
+
+
+        <h3>1. Instant e-PAN साठी पैसे लागतात का?</h3>
+
+        <p>
+            Eligible Instant e-PAN service विनामूल्य आहे.
+        </p>
+
+
+        <h3>2. PAN Card हरवल्यावर नवीन PAN काढायचा का?</h3>
+
+        <p>
+            नाही. Existing PAN number कायम ठेवून
+            e-PAN किंवा authorised reprint process वापरा.
+        </p>
+
+
+        <h3>3. Aadhaar ला mobile number linked नसेल तर?</h3>
+
+        <p>
+            Instant e-PAN साठी Aadhaar-linked mobile
+            number आवश्यक आहे. त्यामुळे Aadhaar-related
+            mobile update आवश्यक असू शकतो.
+        </p>
+
+
+        <h3>4. e-PAN download करता येतो का?</h3>
+
+        <p>
+            हो. e-PAN उपलब्ध झाल्यानंतर official portal
+            वर उपलब्ध download/view सुविधा वापरता येते.
+        </p>
+
+
+        <h3>5. PAN मध्ये नाव चुकीचे असल्यास?</h3>
+
+        <p>
+            PAN correction process द्वारे योग्य supporting
+            documents सह correction request करता येते.
+        </p>
+
+
+        <h3>6. एका व्यक्तीकडे दोन PAN असतील तर?</h3>
+
+        <p>
+            एकापेक्षा जास्त PAN ठेवणे टाळावे.
+            Existing PAN असल्यास नवीन PAN साठी अर्ज करू नये.
+        </p>
+
+    </section>
+
+
+    <!-- OFFICIAL WEBSITE -->
+
+    <section class="pan-card">
+
+        <h2>🔗 Official PAN Website</h2>
+
+        <p>
+            PAN संबंधित कामासाठी शक्यतो
+            Income Tax Department च्या official website चा
+            वापर करा.
+        </p>
+
+        <a
+            class="official-btn"
+            href="https://www.incometax.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Income Tax Department ↗
+
+        </a>
+
+    </section>
+
+
+    <!-- BACK -->
+
+    <div class="back-area">
+
+        <a
+            class="back-btn"
+            href="government-services.html">
+
+            ← Government Services वर जा
+
+        </a>
 
     </div>
 
+
+</div>
+
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -612,6 +955,7 @@
     </div>
 
 </footer>
+
 
 </body>
 </html>
